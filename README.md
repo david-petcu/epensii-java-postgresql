@@ -1,5 +1,7 @@
 # E-Pensii
 
+**Română** | [English](README.en.md)
+
 Aplicație desktop Java pentru gestionarea cererilor de pensionare, realizată cu Swing și PostgreSQL. Proiectul urmărește întregul flux al unui dosar, de la depunere și verificare până la calculul pensiei și punerea în plată.
 
 > [!IMPORTANT]
@@ -58,8 +60,9 @@ Execută scripturile în această ordine:
 
 1. `database/01_create_database.sql`, conectat la baza `postgres`;
 2. `database/02_schema.sql`, conectat la baza nouă `epensii`.
+3. opțional, `database/05_demo_portofoliu.sql`, pentru date fictive de prezentare.
 
-Scriptul principal creează schema, regulile de integritate, parametrii de calcul și câteva date demonstrative fictive. Scripturile `03` și `04` sunt păstrate pentru migrarea instalărilor mai vechi.
+Scriptul principal creează schema, regulile de integritate și parametrii de calcul. Scripturile `03` și `04` sunt păstrate pentru migrarea instalărilor mai vechi, iar scriptul `05` poate fi rulat în siguranță de mai multe ori.
 
 ### 3. Conexiunea
 

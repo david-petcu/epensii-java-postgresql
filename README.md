@@ -2,6 +2,9 @@
 
 Aplicație desktop Java pentru gestionarea cererilor de pensionare, realizată cu Swing și PostgreSQL. Proiectul urmărește întregul flux al unui dosar, de la depunere și verificare până la calculul pensiei și punerea în plată.
 
+> [!IMPORTANT]
+> Proiectul are scop educațional. Regulile, pragurile și valorile folosite în calcule sunt demonstrative și nu reprezintă legislația oficială privind pensiile din România.
+
 ## Funcționalități
 
 - înregistrarea cererilor pentru limită de vârstă, invaliditate și urmaș;
@@ -97,3 +100,7 @@ Testul `integration.FluxIntegrareCheck` verifică fluxul complet, persistența s
 ## Scop
 
 Proiect educațional și de portofoliu care demonstrează programare orientată pe obiecte, interfețe desktop, acces JDBC, proiectarea unei baze relaționale și separarea responsabilităților pe straturi.
+
+## Licență
+
+Proiectul este distribuit sub licența [MIT](LICENSE).

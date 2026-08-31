@@ -7,6 +7,19 @@ A Java desktop application for managing pension requests with Swing and PostgreS
 > [!IMPORTANT]
 > This is an educational project. Its rules, thresholds, and calculation values are provided for demonstration purposes and do not represent official Romanian pension legislation.
 
+## Screenshots
+
+<table>
+  <tr>
+    <td width="50%"><strong>Dashboard</strong><br><img src="docs/screenshots/dashboard.png" alt="E-Pensii dashboard"></td>
+    <td width="50%"><strong>Request registry</strong><br><img src="docs/screenshots/registru.png" alt="Request registry and filters"></td>
+  </tr>
+  <tr>
+    <td width="50%"><strong>Salary history</strong><br><img src="docs/screenshots/salarii.png" alt="Calendar-year salary management"></td>
+    <td width="50%"><strong>Request validation</strong><br><img src="docs/screenshots/validare.png" alt="Pension request validation"></td>
+  </tr>
+</table>
+
 ## Features
 
 - requests for retirement age, disability, and survivor pensions;

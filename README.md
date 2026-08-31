@@ -7,6 +7,19 @@ Aplicație desktop Java pentru gestionarea cererilor de pensionare, realizată c
 > [!IMPORTANT]
 > Proiectul are scop educațional. Regulile, pragurile și valorile folosite în calcule sunt demonstrative și nu reprezintă legislația oficială privind pensiile din România.
 
+## Capturi de ecran
+
+<table>
+  <tr>
+    <td width="50%"><strong>Dashboard</strong><br><img src="docs/screenshots/dashboard.png" alt="Dashboard E-Pensii"></td>
+    <td width="50%"><strong>Registrul cererilor</strong><br><img src="docs/screenshots/registru.png" alt="Registrul cererilor și filtre"></td>
+  </tr>
+  <tr>
+    <td width="50%"><strong>Istoric salarial</strong><br><img src="docs/screenshots/salarii.png" alt="Gestionarea salariilor pe ani calendaristici"></td>
+    <td width="50%"><strong>Validarea dosarului</strong><br><img src="docs/screenshots/validare.png" alt="Validarea unui dosar de pensie"></td>
+  </tr>
+</table>
+
 ## Funcționalități
 
 - înregistrarea cererilor pentru limită de vârstă, invaliditate și urmaș;

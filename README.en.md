@@ -60,6 +60,47 @@ ui → service → repository → PostgreSQL
 
 Additional details are available in [ARHITECTURA.md](ARHITECTURA.md).
 
+## Database schema
+
+The diagram shows the persistent entities and the relationship between requests and salary history:
+
+```mermaid
+erDiagram
+    CERERIPENSIE ||--o{ SALARII : "has"
+
+    CERERIPENSIE {
+        integer id PK
+        varchar numarinregistrare UK
+        varchar nume
+        varchar prenume
+        varchar tippensie
+        integer varsta
+        integer stagiu
+        varchar status
+        numeric valoarepensie
+        date dataplata
+        text motivrespingere
+    }
+
+    SALARII {
+        integer id PK
+        integer id_cerere FK
+        integer an_calendaristic
+        numeric salariu_brut_mediu
+    }
+
+    PARAMETRI_PENSIE {
+        integer id PK
+        integer an UK
+        numeric salariu_mediu
+        numeric valoare_punct
+        date data_inceput
+        date data_sfarsit
+    }
+```
+
+`SALARII.id_cerere` references `CERERIPENSIE.id`. `PARAMETRI_PENSIE` is queried by year and validity interval during calculation and therefore does not require a direct foreign key.
+
 ## Setup
 
 ### Requirements

@@ -59,6 +59,47 @@ ui → service → repository → PostgreSQL
 
 Mai multe detalii sunt disponibile în [ARHITECTURA.md](ARHITECTURA.md).
 
+## Schema bazei de date
+
+Diagrama prezintă entitățile persistente și relația dintre cereri și istoricul salarial:
+
+```mermaid
+erDiagram
+    CERERIPENSIE ||--o{ SALARII : "are"
+
+    CERERIPENSIE {
+        integer id PK
+        varchar numarinregistrare UK
+        varchar nume
+        varchar prenume
+        varchar tippensie
+        integer varsta
+        integer stagiu
+        varchar status
+        numeric valoarepensie
+        date dataplata
+        text motivrespingere
+    }
+
+    SALARII {
+        integer id PK
+        integer id_cerere FK
+        integer an_calendaristic
+        numeric salariu_brut_mediu
+    }
+
+    PARAMETRI_PENSIE {
+        integer id PK
+        integer an UK
+        numeric salariu_mediu
+        numeric valoare_punct
+        date data_inceput
+        date data_sfarsit
+    }
+```
+
+`SALARII.id_cerere` referă `CERERIPENSIE.id`. `PARAMETRI_PENSIE` este consultată după an și intervalul de valabilitate în timpul calculului și nu necesită o cheie străină directă.
+
 ## Configurare
 
 ### 1. Cerințe
